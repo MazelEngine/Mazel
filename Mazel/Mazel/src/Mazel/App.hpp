@@ -1,11 +1,10 @@
 #pragma once
 
 #include <stdio.h>
-#include "Core.h"
 
 namespace Mazel {
 
-    class MZ_API App
+    class App
     {
     public:
         App();
@@ -13,5 +12,8 @@ namespace Mazel {
         
         void Run();
     };
+
+    // To be define in client
+    App* CreateApp();
 
 }
