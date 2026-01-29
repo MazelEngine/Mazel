@@ -1,0 +1,13 @@
+# Xcode
+DerivedData/
+build/
+*.moved-aside
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# User settings
+xcuserdata/
+
+# macOS
+.DS_Store
