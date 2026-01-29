@@ -1,5 +1,5 @@
 #pragma once
 
-namespace Mazel {
-    __attribute__((visibility("default"))) void Print();
-}
+// For use by Mazel applications
+
+#include "Mazel/App.h"
