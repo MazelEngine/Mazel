@@ -281,7 +281,10 @@
 					"$(inherited)",
 					"MZ_PLATFORM_MACOS=1",
 				);
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/../Mazel/Mazel/src";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../Mazel/Mazel/src",
+					"$(SRCROOT)/../Mazel/vendor/spdlog/include",
+				);
 				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -293,7 +296,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JNSFRVT5WY;
 				ENABLE_HARDENED_RUNTIME = YES;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/../Mazel/Mazel/src";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../Mazel/Mazel/src",
+					"$(SRCROOT)/../Mazel/vendor/spdlog/include",
+				);
 				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

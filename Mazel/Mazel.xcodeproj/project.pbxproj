@@ -6,8 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D478A0FE2F2C1BC9007209B0 /* Log.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D478A0FC2F2C1BC9007209B0 /* Log.hpp */; };
+		D478A0FF2F2C1BC9007209B0 /* Log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D478A0FD2F2C1BC9007209B0 /* Log.cpp */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		D4640FA72F2A9B4000F35F9C /* libMazel.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libMazel.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		D478A0FC2F2C1BC9007209B0 /* Log.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Log.hpp; path = Mazel/src/Mazel/Log.hpp; sourceTree = "<group>"; };
+		D478A0FD2F2C1BC9007209B0 /* Log.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Log.cpp; path = Mazel/src/Mazel/Log.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +39,8 @@
 		D4640F9E2F2A9B4000F35F9C = {
 			isa = PBXGroup;
 			children = (
+				D478A0FC2F2C1BC9007209B0 /* Log.hpp */,
+				D478A0FD2F2C1BC9007209B0 /* Log.cpp */,
 				D4640FA92F2A9B4000F35F9C /* Mazel */,
 				D4640FA82F2A9B4000F35F9C /* Products */,
 			);
@@ -52,6 +61,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D478A0FE2F2C1BC9007209B0 /* Log.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D478A0FF2F2C1BC9007209B0 /* Log.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +267,8 @@
 					"MZ_PLATFORM_MACOS=1",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/vendor/spdlog/include";
+				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -272,6 +285,8 @@
 				GCC_ENABLE_CPP_EXCEPTIONS = YES;
 				GCC_ENABLE_CPP_RTTI = YES;
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/vendor/spdlog/include";
+				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};

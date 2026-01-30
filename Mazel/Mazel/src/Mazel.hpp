@@ -3,6 +3,7 @@
 // For use by Mazel applications
 
 #include "Mazel/App.hpp"
+#include "Mazel/Log.hpp"
 
 // Mazel Entry Point ------------
 
